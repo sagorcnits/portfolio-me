@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,10 @@
 @layer components {
   .font-outfit {
     font-family: "Outfit", sans-serif;
+  }
+
+  .russo-one {
+    font-family: "Russo One", sans-serif;
   }
 
   .button {
@@ -32,5 +37,20 @@
     width: 100%;
     padding: 10px 30px;
     margin-top: 15px;
+  }
+
+  .gr-sonali {
+    background: linear-gradient(90deg, #9f7b0f 0%, #fad76b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .banner {
+    background: radial-gradient(
+      60.96% 100% at 50% 100%,
+      #0c2235 0%,
+      #010a12 65.63%
+    );
   }
 }
