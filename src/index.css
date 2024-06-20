@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .font-outfit {
+    font-family: "Outfit", sans-serif;
+  }
+
+  .button {
+    padding: 10px 26px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #a4a766 0%, #ae9034 100%);
+    color: #010a12;
+    font-size: bold;
+    transition: all 0.5s;
+  }
+
+  /* .button:hover {
+    background: linear-gradient(90deg, #8a2626 0%, #1a1919 100%);
+    color: white;
+  } */
+
+  /* .active {
+    color: #fad76b;
+    text-decoration: underline;
+  } */
+
+  .nav-bar {
+    background-color: #ae9034;
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: 15px;
+  }
+}
