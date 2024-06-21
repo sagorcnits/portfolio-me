@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   return (
     <>
-     <div className="fixed w-full top-0 bg-[#010A12]">
+     <div className="fixed w-full top-0 bg-[#010A12] z-50">
      <div className="flex justify-between items-center max-w-6xl mx-auto border-x border-b rounded-b-[20px] border-sonali px-4 py-2 font-outfit">
         <div className="flex gap-2 items-center">
           <svg

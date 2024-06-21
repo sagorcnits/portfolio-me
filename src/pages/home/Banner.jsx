@@ -3,12 +3,11 @@ import { MdWavingHand } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { Typewriter } from "react-simple-typewriter";
 import officialImg from "../../assets/images/sagor-official.png";
-// import shadowImg from "../../assets/images/banner-sahdow.png";
-// import bannerImg from "../../assets/images/sagor-about.jpg";
+
 const Banner = () => {
   return (
-    <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col lg:flex-row items-center">
-      <div>
+    <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col-reverse lg:flex-row items-center">
+      <div className="mt-10 lg:mt-0">
         <h1 className="text-sonali flex items-center gap-2">
           Hello There{" "}
           <span className="text-white text-[30px]">
@@ -147,13 +146,8 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex justify-end mt-10 lg:mt-0">
+      <div className="flex-1 flex justify-end ">
         <div className="md:w-[560px]  rounded-lg overflow-hidden  border border-[#0A0E37] relative">
-          {/* <img
-            className="w-full scale-[2] brightness-[0.24] hover:brightness-100 duration-500"
-            src={bannerImg}
-            alt=""
-          /> */}
           <div className="flex justify-between items-center  border-b border-[#312E81] p-4">
             <div className="flex items-center gap-2">
               <div className="size-4 rounded-full bg-green-500"></div>
@@ -161,7 +155,7 @@ const Banner = () => {
               <div className="size-4 rounded-full bg-yellow-500"></div>
             </div>
             <div className="size-[30px] rounded-full overflow-hidden">
-                <img src={officialImg} alt="" />
+              <img src={officialImg} alt="" />
             </div>
           </div>
           <div className="p-4">
