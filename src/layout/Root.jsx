@@ -4,9 +4,11 @@ import Navbar from "../components/shared/Navbar";
 
 const Root = () => {
   return (
-    <div className="bg-[#010A12] h-screen">
+    <div className="bg-[#010A12]">
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="px-2 md:px-0">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );

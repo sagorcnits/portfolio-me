@@ -15,7 +15,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex justify-between items-center max-w-6xl mx-auto border-x border-b rounded-b-[20px] border-sonali px-4 py-2 font-outfit">
+     <div className="fixed w-full top-0 bg-[#010A12]">
+     <div className="flex justify-between items-center max-w-6xl mx-auto border-x border-b rounded-b-[20px] border-sonali px-4 py-2 font-outfit">
         <div className="flex gap-2 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -90,6 +91,7 @@ const Navbar = () => {
           className="text-white text-[25px] cursor-pointer md:hidden flex"
         ></FaBars>
       </div>
+     </div>
       <div
         ref={navRef}
         className="fixed -left-[300px] top-0 bottom-0 w-[250px] bg-[#0E161E]  z-50 duration-500 font-outfit"
@@ -128,7 +130,7 @@ const Navbar = () => {
             className="text-[34px]  cursor-pointer text-sonali"
           ></IoClose>
         </div>
-        <ul className="items-center gap-4 font-outfit text-white  *:mt-4 *:text-center  *:py-4">
+        <ul className="items-center gap-4 font-outfit text-white  *:mt-4 *:text-center *:text-[22px] *:py-4">
           <li className="hover:text-[#fad76b] duration-500">
             <NavLink
               className={({ isActive, isPending }) =>
