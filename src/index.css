@@ -22,10 +22,9 @@
     transition: all 0.5s;
   }
 
-  /* .button:hover {
-    background: linear-gradient(90deg, #8a2626 0%, #1a1919 100%);
-    color: white;
-  } */
+  .hover-effect:hover {
+    background-color: #9f7b0f;
+  }
 
   /* .active {
     color: #fad76b;

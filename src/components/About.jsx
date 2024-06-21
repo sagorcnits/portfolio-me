@@ -2,7 +2,7 @@ import bannerImg from "../assets/images/sagor-about.jpg";
 import SectionIntro from "./SectionIntro";
 const About = () => {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div  className="max-w-6xl mx-auto">
       <SectionIntro
         titles={{
           title: "About Me",
@@ -10,8 +10,8 @@ const About = () => {
           span: `portfolios`,
         }}
       ></SectionIntro>
-      <div className="flex flex-col-reverse md:flex-row gap-2 mt-10 items-center">
-        <div className="text-white flex-1 ">
+      <div  className="flex flex-col-reverse md:flex-row gap-2 mt-10 items-center ">
+        <div className="text-white flex-1 mt-4 md:mt-0">
           <p className="gr-sonali text-[24px] russo-one font-bold">WHO I AM?</p>
           <p className="font-outfit text-balance">
             My name is <span className="text-[#4cf183]">Sagor Hossain</span>. I am a professional and enthusiastic programmer

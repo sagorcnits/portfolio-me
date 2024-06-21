@@ -3,6 +3,7 @@ import { MdWavingHand } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { Typewriter } from "react-simple-typewriter";
 import officialImg from "../../assets/images/sagor-official.png";
+import Social from "../../components/Social";
 
 const Banner = () => {
   return (
@@ -137,6 +138,7 @@ const Banner = () => {
         <p className="font-outfit  text-white">
           The combination of my passion for design and code.
         </p>
+        <Social></Social>
         <div className="flex items-center gap-4">
           <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
             Contact Me <RiContactsFill></RiContactsFill>
@@ -147,8 +149,8 @@ const Banner = () => {
         </div>
       </div>
       <div className="flex-1 flex justify-end ">
-        <div className="md:w-[560px]  rounded-lg overflow-hidden  border border-[#0A0E37] relative">
-          <div className="flex justify-between items-center  border-b border-[#312E81] p-4">
+        <div className="md:w-[560px]  rounded-lg overflow-hidden  border border-[#315779] relative">
+          <div className="flex justify-between items-center  border-b border-[#315779] p-4">
             <div className="flex items-center gap-2">
               <div className="size-4 rounded-full bg-green-500"></div>
               <div className="size-4 rounded-full bg-orange-500"></div>
