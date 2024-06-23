@@ -11,7 +11,7 @@ import reactImg from "../assets/icons/react.webp";
 import reduxImg from "../assets/icons/redux.webp";
 import tailwondImg from "../assets/icons/tailwind.webp";
 import SectionIntro from "./SectionIntro";
-const Skills = () => {
+const Skills = ({path}) => {
   const skilsArr = [
     {
       title: "HTML5",
@@ -63,6 +63,8 @@ const Skills = () => {
     },
   ];
 
+
+  
   return (
     <div className="max-w-6xl mx-auto">
       <SectionIntro
@@ -77,7 +79,7 @@ const Skills = () => {
           return (
             <div
               key={id}
-              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779] cursor-pointer relative overflow-hidden skill-card hover:rotate-12 duration-500"
+              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779]  relative overflow-hidden skill-card hover:rotate-12 duration-500"
             >
               <img className="w-[40%] mx-auto" src={item.img} alt="" />
               <h1 className="text-center text-white russo-one">{item.title}</h1>
@@ -88,9 +90,9 @@ const Skills = () => {
           );
         })}
       </div>
-      <div className="text-center mt-10">
+     {path=="home" && <div className="text-center mt-10">
         <button className="button  russo-one">Show All</button>
-      </div>
+      </div>}
     </div>
   );
 };

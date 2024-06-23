@@ -7,8 +7,8 @@ import Social from "../../components/Social";
 
 const Banner = () => {
   return (
-    <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col-reverse lg:flex-row items-center">
-      <div className="mt-10 lg:mt-0">
+    <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col-reverse lg:flex-row items-center ">
+      <div className="mt-10 lg:mt-0 ">
         <h1 className="text-sonali flex items-center gap-2">
           Hello There{" "}
           <span className="text-white text-[30px]">
