@@ -61,4 +61,16 @@
   .project-card:hover .effect-card {
     transform: scale(1);
   }
+
+  .skill-card:hover .effect {
+    transform: rotate(-180deg);
+  }
+
+  .card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .blog-card:hover .blog-img {
+    transform: scale(1.2);
+  }
 }

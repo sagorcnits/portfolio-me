@@ -77,10 +77,13 @@ const Skills = () => {
           return (
             <div
               key={id}
-              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779] cursor-pointer "
+              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779] cursor-pointer relative overflow-hidden skill-card hover:rotate-12 duration-500"
             >
               <img className="w-[40%] mx-auto" src={item.img} alt="" />
               <h1 className="text-center text-white russo-one">{item.title}</h1>
+              <div
+                className={`size-24 rounded-full effect duration-500 border-r-sonali border-t-sonali border-l-[#0E161E] border-b-[#0E161E]  border-[30px] absolute -top-14 -right-9 bg-[#0E161E] `}
+              ></div>
             </div>
           );
         })}
