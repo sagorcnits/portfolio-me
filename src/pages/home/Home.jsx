@@ -34,6 +34,9 @@ const Home = () => {
           <BlogCard></BlogCard>
           <BlogCard></BlogCard>
         </div>
+        <div className="text-center mt-10">
+          <button className="button russo-one">More Blogs</button>
+        </div>
       </section>
     </div>
   );
