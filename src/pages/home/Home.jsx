@@ -38,6 +38,7 @@ const Home = () => {
           <button className="button russo-one">More Blogs</button>
         </div>
       </section>
+      
     </div>
   );
 };
