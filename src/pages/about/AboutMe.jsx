@@ -1,13 +1,8 @@
-import { IoSchoolSharp } from "react-icons/io5";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import About from "../../components/About";
-import SectionIntro from "../../components/SectionIntro";
 import Skills from "../../components/Skills";
 import TinyBanner from "../../components/TinyBanner";
+import Educations from "./Educations";
+import Experience from "./Experience";
 const AboutMe = () => {
   return (
     <div>
@@ -15,57 +10,14 @@ const AboutMe = () => {
       <section>
         <About></About>
       </section>
+      <section >
+        <Experience></Experience>
+      </section>
       <section>
         <Skills path="about"></Skills>
       </section>
       <section>
-        <SectionIntro
-          titles={{
-            title: "Education",
-            header: `My educational`,
-            span: `status`,
-          }}
-        ></SectionIntro>
-
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "#0E161E", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            iconStyle={{ background: "#0E161E", color: "#fff" }}
-            icon={<IoSchoolSharp className="text-sonali" />}
-          >
-            <h3 className="russo-one gr-sonali">Bachelor Degree</h3>
-            <h4 className="font-outfit text-green-500">2020 - Present</h4>
-            <p>National University in Pabna</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "#0E161E", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            iconStyle={{ background: "#0E161E", color: "#fff" }}
-            icon={<IoSchoolSharp className="text-sonali" />}
-          >
-            <h3 className="russo-one gr-sonali">
-              Higher Secondary Certificate
-            </h3>
-            <h4 className="font-outfit text-green-500">2018 - 2020</h4>
-            <p>Pabna Govt. College, Pabna</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "#0E161E", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            iconStyle={{ background: "#0E161E", color: "#fff" }}
-            icon={<IoSchoolSharp className="text-sonali" />}
-          >
-            <h3 className="russo-one gr-sonali">
-              Secondary School Certificate
-            </h3>
-            <h4 className="font-outfit text-green-500">2008 - 2018</h4>
-            <p>Komorpur High School</p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+        <Educations></Educations>
       </section>
     </div>
   );
