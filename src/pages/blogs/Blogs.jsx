@@ -1,4 +1,4 @@
-import BlogCard from "../../assets/images/BlogCard";
+import BlogCard from "../../components/BlogCard";
 import SectionIntro from "../../components/SectionIntro";
 import TinyBanner from "../../components/TinyBanner";
 

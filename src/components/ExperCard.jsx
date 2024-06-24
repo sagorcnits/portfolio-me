@@ -1,6 +1,6 @@
 const ExperCard = ({ info }) => {
   return (
-    <div className="flex items-center gap-6 text-white border border-[#315779] p-6 rounded-md">
+    <div className="flex items-center gap-6 text-white border border-[#315779] p-6 rounded-md hover:bg-[#0E161E] duration-500">
       <div>
         <svg
           className="text-sonali"

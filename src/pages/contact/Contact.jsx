@@ -37,7 +37,7 @@ const Contact = () => {
                 {...register("name", { required: true })}
                 type="text"
                 name="name"
-                className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 bg-[#17212b]"
+                className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 bg-[#273747]"
               />
             </div>
             <div className="mt-4">
@@ -46,7 +46,7 @@ const Contact = () => {
                 {...register("email", { required: true })}
                 type="email"
                 name="email"
-                className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 bg-[#17212b]"
+                className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 bg-[#273747]"
               />
             </div>
             <div className="mt-4">
@@ -56,7 +56,7 @@ const Contact = () => {
                 {...register("message", { required: true })}
                 type="text"
                 name="message"
-                className="w-full h-[150px] overflow-auto resize-none rounded-md bg-transparent  py-2 focus:outline-none px-4 bg-[#17212b]"
+                className="w-full h-[150px] overflow-auto resize-none rounded-md bg-transparent  py-2 focus:outline-none px-4 bg-[#273747]"
               />
             </div>
             <button className="button w-full mt-4 russo-one">Submit</button>

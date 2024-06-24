@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import BlogCard from "../../assets/images/BlogCard";
 import About from "../../components/About";
+import BlogCard from "../../components/BlogCard";
 import SectionIntro from "../../components/SectionIntro";
 import Skills from "../../components/Skills";
 import Banner from "./Banner";

@@ -62,6 +62,10 @@ const Skills = ({path}) => {
       title: "JavaScript",
       img: JSImg,
     },
+    {
+      title: "JavaScript",
+      img: JSImg,
+    },
   ];
 
 
@@ -76,7 +80,20 @@ const Skills = ({path}) => {
         }}
       ></SectionIntro>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10">
-        {skilsArr.map((item, id) => {
+        {path == "home" ? skilsArr.slice(0,12).map((item, id) => {
+          return (
+            <div
+              key={id}
+              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779]  relative overflow-hidden skill-card hover:rotate-12 duration-500"
+            >
+              <img className="w-[40%] mx-auto" src={item.img} alt="" />
+              <h1 className="text-center text-white russo-one">{item.title}</h1>
+              <div
+                className={`size-24 rounded-full effect duration-500 border-r-sonali border-t-sonali border-l-[#0E161E] border-b-[#0E161E]  border-[30px] absolute -top-14 -right-9 bg-[#0E161E] `}
+              ></div>
+            </div>
+          );
+        }) : skilsArr.map((item, id) => {
           return (
             <div
               key={id}

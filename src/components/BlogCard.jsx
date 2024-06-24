@@ -1,5 +1,6 @@
 import { AiFillLike } from "react-icons/ai";
 import { FaCommentAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BlogCard = () => {
   return (
@@ -32,7 +33,7 @@ const BlogCard = () => {
           As a React developer, it is important to have a solid understanding of
           the framework's key concepts...
         </p>
-        <p className="text-center russo-one gr-sonali">Read More...</p>
+      <Link to="/blog-details"><p className="text-center russo-one gr-sonali">Read More...</p></Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { FaDownload } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import officialImg from "../../assets/images/sagor-official.png";
 import Social from "../../components/Social";
@@ -135,14 +136,14 @@ const Banner = () => {
             ></Typewriter>
           </div>
         </div>
-        <p className="font-outfit  text-white">
+        <p className="font-outfit  text-white pb-4">
           The combination of my passion for design and code.
         </p>
         <Social></Social>
         <div className="flex items-center gap-4">
-          <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
+         <Link to="/contact"><button className="button px-2 mt-6 font-semibold flex items-center gap-2">
             Contact Me <RiContactsFill></RiContactsFill>
-          </button>
+          </button></Link>
           <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
             Download Resume <FaDownload></FaDownload>
           </button>

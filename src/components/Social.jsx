@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Social = () => {
   return (
-    <div className=" flex gap-4 *:hover-effect *:duration-500 *:border *:border-[#315779] *:cursor-pointer *:size-[40px] *:rounded-full *:bg-[#0E161E] *:text-white *:flex *:justify-center *:items-center ">
+    <div className="flex gap-4 *:hover-effect *:duration-500 *:border *:border-[#315779] *:cursor-pointer *:size-[40px] *:rounded-full *:bg-[#0E161E] *:text-white *:flex *:justify-center *:items-center ">
       <Link
         to="https://www.facebook.com/profile.php?id=100075240488312"
         target="_blank"
