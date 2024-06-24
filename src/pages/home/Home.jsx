@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BlogCard from "../../assets/images/BlogCard";
 import About from "../../components/About";
 import SectionIntro from "../../components/SectionIntro";
@@ -16,7 +17,7 @@ const Home = () => {
         <Skills path="home"></Skills>
       </section>
       <section className="mt-28">
-        <Portfolio></Portfolio>
+        <Portfolio path="home"></Portfolio>
       </section>
       <section className="mt-28">
         <SectionIntro
@@ -35,10 +36,11 @@ const Home = () => {
           <BlogCard></BlogCard>
         </div>
         <div className="text-center mt-10">
-          <button className="button russo-one">More Blogs</button>
+          <Link to="/blogs">
+            <button className="button russo-one">More Blogs</button>
+          </Link>
         </div>
       </section>
-      
     </div>
   );
 };

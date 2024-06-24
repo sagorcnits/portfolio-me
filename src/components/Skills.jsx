@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bootstrapImg from "../assets/icons/bootstrap.webp";
 import cssImg from "../assets/icons/css.webp";
 import expressImg from "../assets/icons/express.webp";
@@ -91,7 +92,7 @@ const Skills = ({path}) => {
         })}
       </div>
      {path=="home" && <div className="text-center mt-10">
-        <button className="button  russo-one">Show All</button>
+      <Link to="/about"><button className="button  russo-one">Show All</button></Link>
       </div>}
     </div>
   );

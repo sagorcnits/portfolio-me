@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "../../components/ProjectCard";
 import SectionIntro from "../../components/SectionIntro";
 
-const Portfolio = () => {
+const Portfolio = ({path}) => {
   return (
     <div className="max-w-6xl mx-auto">
       <SectionIntro
@@ -19,9 +20,9 @@ const Portfolio = () => {
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
       </div>
-      <div className="text-center russo-one mt-10">
-        <button className="button">View More</button>
-      </div>
+     {path=="home" && <div className="text-center russo-one mt-10">
+       <Link to="/projects"><button className="button">View More</button></Link>
+      </div>}
     </div>
   );
 };

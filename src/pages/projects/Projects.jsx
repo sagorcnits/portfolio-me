@@ -1,7 +1,13 @@
+import TinyBanner from "../../components/TinyBanner";
+import Portfolio from "../home/Portfolio";
+
 const Projects = () => {
   return (
     <div>
-      <h1>Projects</h1>
+      <TinyBanner info={{ title: "Projects" }}></TinyBanner>
+      <section>
+        <Portfolio path="projects"></Portfolio>
+      </section>
     </div>
   );
 };
