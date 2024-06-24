@@ -17,6 +17,13 @@ const Home = () => {
         <Skills path="home"></Skills>
       </section>
       <section className="mt-28">
+      <SectionIntro
+        titles={{
+          title: "Portfolio",
+          header: `My recent `,
+          span: `work`,
+        }}
+      ></SectionIntro>
         <Portfolio path="home"></Portfolio>
       </section>
       <section className="mt-28">

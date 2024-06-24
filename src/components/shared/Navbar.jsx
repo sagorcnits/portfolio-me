@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isActive, setActive] = useState(true);
   const navRef = useRef();
@@ -88,7 +88,9 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <button className="button font-bold">Let’s Talk</button>
+            <Link to="/contact">
+              <button className="button font-bold">Let’s Talk</button>
+            </Link>
           </div>
           <FaBars
             onClick={handleSideBar}
@@ -96,6 +98,7 @@ const Navbar = () => {
           ></FaBars>
         </div>
       </div>
+
       <div
         ref={navRef}
         className="fixed -left-[300px] top-0 bottom-0 w-[250px] bg-[#0E161E]  z-[9999] duration-500 font-outfit "

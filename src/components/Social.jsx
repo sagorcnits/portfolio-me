@@ -1,29 +1,40 @@
 import {
-    FaFacebook,
-    FaGithub,
-    FaInstagram,
-    FaLinkedinIn,
-    FaTwitter,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Social = () => {
   return (
-    <div className="mt-6 flex gap-4 *:hover-effect *:duration-500 *:border *:border-[#315779] *:cursor-pointer *:size-[40px] *:rounded-full *:bg-[#0E161E] *:text-white *:flex *:justify-center *:items-center ">
-      <div>
+    <div className=" flex gap-4 *:hover-effect *:duration-500 *:border *:border-[#315779] *:cursor-pointer *:size-[40px] *:rounded-full *:bg-[#0E161E] *:text-white *:flex *:justify-center *:items-center ">
+      <Link
+        to="https://www.facebook.com/profile.php?id=100075240488312"
+        target="_blank"
+      >
         <FaFacebook></FaFacebook>
-      </div>
-      <div>
-        <FaLinkedinIn></FaLinkedinIn>
-      </div>
-      <div>
+      </Link>
+
+      <Link
+        to="https://www.linkedin.com/in/sagor-hossain-web-dev/"
+        target="_blank"
+      >
+        <FaLinkedinIn></FaLinkedinIn>{" "}
+      </Link>
+
+      <Link to="https://x.com/SagorHossainWD" target="_blank">
         <FaTwitter></FaTwitter>
-      </div>
-      <div>
+      </Link>
+
+      <Link to="https://www.instagram.com/sagor.cnits/" target="_blank">
         <FaInstagram></FaInstagram>
-      </div>
-      <div>
+      </Link>
+
+      <Link to="https://github.com/sagorcnits" target="_blank">
         <FaGithub></FaGithub>
-      </div>
+      </Link>
     </div>
   );
 };
