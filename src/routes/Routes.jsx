@@ -4,13 +4,14 @@ import AboutMe from "../pages/about/AboutMe";
 import Blogs from "../pages/blogs/Blogs";
 import Contact from "../pages/contact/Contact";
 import Home from "../pages/home/Home";
-import ProjectDetails from "../pages/projectDetails/ProjectDetails";
+import NotFound from "../pages/notFound/NotFound";
 import Projects from "../pages/projects/Projects";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/",
@@ -36,13 +37,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
-
-      {
-        path: "/project-details",
-        element: <ProjectDetails></ProjectDetails>,
-      },
-
-     
     ],
   },
 ]);
