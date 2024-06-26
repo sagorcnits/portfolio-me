@@ -2,7 +2,7 @@ import bannerImg from "../assets/images/sagor-about.jpg";
 import SectionIntro from "./SectionIntro";
 const About = () => {
   return (
-    <div  className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto">
       <SectionIntro
         titles={{
           title: "About Me",
@@ -10,18 +10,20 @@ const About = () => {
           span: `portfolios`,
         }}
       ></SectionIntro>
-      <div  className="flex flex-col-reverse md:flex-row gap-2 mt-10 items-center ">
+      <div className="flex flex-col-reverse md:flex-row gap-2 mt-10 items-center ">
         <div className="text-white flex-1 mt-4 md:mt-0">
           <p className="gr-sonali text-[24px] russo-one font-bold">WHO I AM?</p>
           <p className="font-outfit text-balance">
-            My name is <span className="text-[#4cf183]">Sagor Hossain</span>. I am a professional and enthusiastic programmer
-            in my daily life. I am a quick learner with a self-learning
-            attitude. I love to learn and explore new technologies and am
-            passionate about problem-solving. I love almost all the stacks of
-            web application development and love to make the web more open to
-            the world. My core skill is based on JavaScript and I love to do
-            most of the things using JavaScript. I am available for any kind of
-            job opportunity that suits my skills and interests.
+            My name is <span className="text-[#4cf183]">Sagor Hossain</span>. I
+            am a professional and enthusiastic programmer in my daily life. I'm
+            a passionate MERN stack developer with a strong background in
+            creating dynamic and efficient web applications. My expertise spans
+            the full spectrum of the MERN stack: MongoDB, Express.js, React, and
+            Node.js I am a quick learner with a self-learning attitude. I love
+            to learn and explore new technologies and am passionate about
+            problem-solving. My core skill is based on JavaScript and I love to
+            do most of the things using JavaScript. I am available for any kind
+            of job opportunity that suits my skills and interests.
           </p>
           <div className="mt-6">
             <p className="text-sonali text-[22px] font-outfit">Name</p>

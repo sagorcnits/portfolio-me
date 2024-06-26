@@ -22,6 +22,10 @@
     transition: all 0.5s;
   }
 
+  .button:hover {
+    background: linear-gradient(90deg, #0ce7a58c 0%, #ae9034 100%);
+  }
+
   .hover-effect:hover {
     background-color: #9f7b0f;
   }

@@ -14,7 +14,7 @@ const BlogCard = ({ blog }) => {
       </figure>
       <div>
         <div className="flex items-center justify-between  text-[#16F2B3] font-outfit py-2 text-[14px]">
-          <p>{blog.created_at} Day ago</p>
+          <p>Published : {blog.created_at.slice(0, 10)}</p>
           <div className="flex items-center gap-4 *:flex *:items-center *:gap-1">
             <div>
               <span>{blog.public_reactions_count}</span>
@@ -26,7 +26,7 @@ const BlogCard = ({ blog }) => {
             </div>
           </div>
         </div>
-        <div >
+        <div>
           {" "}
           <Link to={blog.canonical_url} target="_blank">
             <h1 className="text-[18px] font-outfit text-white hover:underline duration-500">
