@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Social from "../../components/Social";
 import TinyBanner from "../../components/TinyBanner";
@@ -5,6 +6,9 @@ import TinyBanner from "../../components/TinyBanner";
 const ProjectDetails = () => {
   return (
     <div>
+       <Helmet>
+        <title>sagor - projectDetails</title>
+      </Helmet>
       <TinyBanner info={{ title: "project Details" }}></TinyBanner>
       <div className="flex flex-col md:flex-row gap-6 *:flex-1 max-w-6xl mx-auto mt-10">
         <div className="rounded-md overflow-hidden">

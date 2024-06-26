@@ -21,7 +21,7 @@ const ProjectCard = () => {
       </div>
 
       <div className="flex justify-between items-center">
-        <p className="text-center russo-one gr-sonali pt-3 text-[30px]">
+        <p className="text-center russo-one gr-sonali pt-3 text-[22px] lg:text-[30px]">
           Bistro Boss
         </p>
         <p className="text-green-500 font-outfit">
