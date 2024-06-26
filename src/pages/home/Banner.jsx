@@ -214,7 +214,7 @@ const Banner = () => {
               <span className="text-[#C70039]">{`else`}</span>{" "}
               <span className="text-[#736F6E] text-[20px]"> {" {"}</span> <br />
               <span className="ml-24 text-[#C70039]">
-                return <span className="text-sonali">{`Sorry 😢`}</span>
+                return <span className="text-sonali">{`I will try as you need`}</span>
               </span>
               <br />
               <span className="ml-24 text-[#736F6E] text-[20px]"> {" }"}</span>

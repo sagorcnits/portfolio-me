@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import bootstrapImg from "../assets/icons/bootstrap.webp";
+import canvaImg from "../assets/icons/canva.webp";
 import cssImg from "../assets/icons/css.webp";
 import expressImg from "../assets/icons/express.webp";
+import figmaImg from "../assets/icons/figma.webp";
 import firebaseImg from "../assets/icons/firebase.webp";
 import htmlImg from "../assets/icons/html.webp";
 import JSImg from "../assets/icons/javascript.jpg";
@@ -12,7 +14,7 @@ import reactImg from "../assets/icons/react.webp";
 import reduxImg from "../assets/icons/redux.webp";
 import tailwondImg from "../assets/icons/tailwind.webp";
 import SectionIntro from "./SectionIntro";
-const Skills = ({path}) => {
+const Skills = ({ path }) => {
   const skilsArr = [
     {
       title: "HTML5",
@@ -30,6 +32,11 @@ const Skills = ({path}) => {
       title: "Tailwind",
       img: tailwondImg,
     },
+    {
+      title: "JavaScript",
+      img: JSImg,
+    },
+
     {
       title: "React JS",
       img: reactImg,
@@ -59,17 +66,15 @@ const Skills = ({path}) => {
       img: firebaseImg,
     },
     {
-      title: "JavaScript",
-      img: JSImg,
+      title: "Figma",
+      img: figmaImg,
     },
     {
-      title: "JavaScript",
-      img: JSImg,
+      title: "Canva",
+      img: canvaImg,
     },
   ];
 
-
-  
   return (
     <div className="max-w-6xl mx-auto">
       <SectionIntro
@@ -80,37 +85,47 @@ const Skills = ({path}) => {
         }}
       ></SectionIntro>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10">
-        {path == "home" ? skilsArr.slice(0,12).map((item, id) => {
-          return (
-            <div
-              key={id}
-              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779]  relative overflow-hidden skill-card hover:rotate-12 duration-500"
-            >
-              <img className="w-[40%] mx-auto" src={item.img} alt="" />
-              <h1 className="text-center text-white russo-one">{item.title}</h1>
-              <div
-                className={`size-24 rounded-full effect duration-500 border-r-sonali border-t-sonali border-l-[#0E161E] border-b-[#0E161E]  border-[30px] absolute -top-14 -right-9 bg-[#0E161E] `}
-              ></div>
-            </div>
-          );
-        }) : skilsArr.map((item, id) => {
-          return (
-            <div
-              key={id}
-              className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779]  relative overflow-hidden skill-card hover:rotate-12 duration-500"
-            >
-              <img className="w-[40%] mx-auto" src={item.img} alt="" />
-              <h1 className="text-center text-white russo-one">{item.title}</h1>
-              <div
-                className={`size-24 rounded-full effect duration-500 border-r-sonali border-t-sonali border-l-[#0E161E] border-b-[#0E161E]  border-[30px] absolute -top-14 -right-9 bg-[#0E161E] `}
-              ></div>
-            </div>
-          );
-        })}
+        {path == "home"
+          ? skilsArr.slice(0, 12).map((item, id) => {
+              return (
+                <div
+                  key={id}
+                  className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779]  relative overflow-hidden skill-card hover:rotate-12 duration-500"
+                >
+                  <img className="w-[40%] mx-auto" src={item.img} alt="" />
+                  <h1 className="text-center text-white russo-one">
+                    {item.title}
+                  </h1>
+                  <div
+                    className={`size-24 rounded-full effect duration-500 border-r-sonali border-t-sonali border-l-[#0E161E] border-b-[#0E161E]  border-[30px] absolute -top-14 -right-9 bg-[#0E161E] `}
+                  ></div>
+                </div>
+              );
+            })
+          : skilsArr.map((item, id) => {
+              return (
+                <div
+                  key={id}
+                  className="bg-[#0E161E] p-4 space-y-4 rounded-md border border-[#315779]  relative overflow-hidden skill-card hover:rotate-12 duration-500"
+                >
+                  <img className="w-[40%] mx-auto" src={item.img} alt="" />
+                  <h1 className="text-center text-white russo-one">
+                    {item.title}
+                  </h1>
+                  <div
+                    className={`size-24 rounded-full effect duration-500 border-r-sonali border-t-sonali border-l-[#0E161E] border-b-[#0E161E]  border-[30px] absolute -top-14 -right-9 bg-[#0E161E] `}
+                  ></div>
+                </div>
+              );
+            })}
       </div>
-     {path=="home" && <div className="text-center mt-10">
-      <Link to="/about"><button className="button  russo-one">Show All</button></Link>
-      </div>}
+      {path == "home" && (
+        <div className="text-center mt-10">
+          <Link to="/about">
+            <button className="button  russo-one">Show All</button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
