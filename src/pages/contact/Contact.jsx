@@ -21,17 +21,28 @@ const Contact = () => {
     const email = data.email;
     const message = data.message;
     const userInfo = { name, email, message };
-    console.log(userInfo);
+    // console.log(userInfo);
 
-    Swal.fire({
-      icon: "success",
-      title: "Thanks for Contact",
-      text:"You will be emailed within a few moments",
-      showConfirmButton: false,
-      timer: 1500,
-    });
+    fetch("https://portfolio-server-kappa-ivory.vercel.app/user", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
 
-    reset();
+      body: JSON.stringify(userInfo),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data);
+        Swal.fire({
+          icon: "success",
+          title: "Thanks for Contact",
+          text: "You will be emailed within a few moments",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        reset();
+      });
   };
 
   return (
