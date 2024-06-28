@@ -4,7 +4,7 @@ import useProjects from "../../hooks/useProjects";
 
 const Portfolio = ({ path }) => {
   const projects = useProjects();
-  console.log(projects);
+  // console.log(projects);
 
   return (
     <div className="max-w-6xl mx-auto">

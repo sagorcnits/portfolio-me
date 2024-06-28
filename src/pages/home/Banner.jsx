@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import officialImg from "../../assets/images/sagor-official.png";
 import Social from "../../components/Social";
-
 const Banner = () => {
   return (
     <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col-reverse lg:flex-row items-center ">
@@ -141,15 +140,22 @@ const Banner = () => {
         </p>
         <Social></Social>
         <div className="flex items-center gap-4">
-         <Link to="/contact"><button className="button px-2 mt-6 font-semibold flex items-center gap-2">
-            Contact Me <RiContactsFill></RiContactsFill>
-          </button></Link>
-          <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
-            Download Resume <FaDownload></FaDownload>
-          </button>
+          <Link to="/contact">
+            <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
+              Contact Me <RiContactsFill></RiContactsFill>
+            </button>
+          </Link>
+          <Link
+            to="https://drive.google.com/file/d/1kGa5qDUhQTfcGNAsjazj16Jufi1gnjX5/view"
+            target="_blank"
+          >
+            <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
+              Download Resume <FaDownload></FaDownload>
+            </button>
+          </Link>
         </div>
       </div>
-      <div className="flex-1 flex justify-end ">
+      <div className="flex-1 flex justify-end">
         <div className="md:w-[560px]  rounded-lg overflow-hidden  border border-[#315779] relative">
           <div className="flex justify-between items-center  border-b border-[#315779] p-4">
             <div className="flex items-center gap-2">
@@ -214,7 +220,8 @@ const Banner = () => {
               <span className="text-[#C70039]">{`else`}</span>{" "}
               <span className="text-[#736F6E] text-[20px]"> {" {"}</span> <br />
               <span className="ml-24 text-[#C70039]">
-                return <span className="text-sonali">{`I will try as you need`}</span>
+                return{" "}
+                <span className="text-sonali">{`I will try as you need`}</span>
               </span>
               <br />
               <span className="ml-24 text-[#736F6E] text-[20px]"> {" }"}</span>

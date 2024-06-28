@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import Swal from "sweetalert2";
 import ContactCard from "../../components/ContactCard";
 import SectionIntro from "../../components/SectionIntro";
 import Social from "../../components/Social";
@@ -11,12 +12,31 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm();
+
+  const submit = (data) => {
+    const name = data.name;
+    const email = data.email;
+    const message = data.message;
+    const userInfo = { name, email, message };
+    console.log(userInfo);
+
+    Swal.fire({
+      icon: "success",
+      title: "Thanks for Contact",
+      text:"You will be emailed within a few moments",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+
+    reset();
+  };
+
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>sagor - contact</title>
       </Helmet>
       <TinyBanner info={{ title: "Contact Me" }}></TinyBanner>
@@ -29,7 +49,10 @@ const Contact = () => {
           }}
         ></SectionIntro>
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto mt-10">
-          <form className="text-white flex-1 border border-[#315779] p-4 rounded-md">
+          <form
+            onSubmit={handleSubmit(submit)}
+            className="text-white flex-1 border border-[#315779] p-4 rounded-md"
+          >
             <p className="font-outfit">
               If you have any questions or concerns, please don't hesitate to
               contact me. I am open to any work opportunities that align with my
