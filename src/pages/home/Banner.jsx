@@ -146,7 +146,7 @@ const Banner = () => {
             </button>
           </Link>
           <Link
-            to="https://drive.google.com/file/d/1kGa5qDUhQTfcGNAsjazj16Jufi1gnjX5/view"
+            to="https://drive.google.com/file/d/16MMMG2F6FFy3jlGtjkSQzJNvteTo4bxL/view"
             target="_blank"
           >
             <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
