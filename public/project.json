@@ -3,18 +3,45 @@
     "id": 1,
     "name": "product-pivot",
     "image": "https://i.ibb.co/VMKnbF9/screencapture-product-pivot-web-app-2024-06-26-21-56-28.png",
-    "project_url": "https://product-pivot.web.app/"
+    "project_url": "https://product-pivot.web.app/",
+    "client": "https://github.com/sagorcnits/product-pivot",
+    "server": "https://github.com/sagorcnits/productPivot-server",
+    "technology": "html, css, tailwind css, JavaScript, React js, Express js, MonogB",
+    "description": "ProductPivot is a web application that optimizes product management and development. Suppose one of your products is not getting good service. By writing details about it and posting it, you will get suggestions and you can also suggest yourself",
+    "feature": [
+      "ProductPivot facilitates collaborative feedback by allowing users to post details about their products ",
+      "Enables users to provide feedback and discuss products, fostering collaboration and enhancing decision-making",
+      "A Private Route on ProductPivot ensures that sensitive or personalized content is protected from unauthorized access."
+    ]
   },
   {
     "id": 2,
     "name": "natural-craft",
     "image": "https://i.ibb.co/XSLj1x3/screencapture-natural-craft-web-app-2024-06-26-22-06-18.png",
-    "project_url": "https://natural-craft.web.app/"
+    "project_url": "https://natural-craft.web.app/",
+    "client": "https://github.com/sagorcnits/natural-craft",
+    "server": "https://github.com/sagorcnits/natural-craft-server",
+    "technology": "html, css, tailwind css, JavaScript, React js, Express js, MonogB",
+    "description": "NaturalCraft Furniture is a web application dedicated to sustainable furniture design and craftsmanship. It provides a platform for showcasing eco-friendly furniture products, featuring handmade and upcycled pieces. Users can explore furniture collections.",
+    "feature": [
+      "Featuring meticulously crafted furniture pieces by skilled artisans, emphasizing quality and uniqueness in every product.",
+      "Highlighting eco-friendly materials such as reclaimed wood, bamboo, and recycled materials, promoting environmental responsibility in furniture production.",
+      "Offering customizable furniture designs to meet individual preferences and space requirements, providing flexibility and personalization for customers."
+    ]
   },
   {
     "id": 3,
-    "name": "frist-homes",
-    "image": "https://i.ibb.co/HP1X9yx/screencapture-fristhomes-ca394-web-app-2024-06-26-23-28-34.png",
-    "project_url": "https://fristhomes-ca394.web.app/"
+    "name": "BloodUnity",
+    "image": "https://i.ibb.co/0CZYKDd/screencapture-blood-unity-bf5e3-web-app-dashboard-all-users-2024-07-04-11-27-50.png",
+    "project_url": "https://fristhomes-ca394.web.app/",
+    "client": "https://github.com/sagorcnits/blood-unity",
+    "server": "https://github.com/sagorcnits/blood-unity-server",
+    "technology": "html, css, tailwind css, JavaScript, React js, Express js, MonogB",
+    "description": "A blood management web application facilitates the efficient tracking and management of blood donations, inventory, and distribution. It allows users to register, schedule donations, manage donor information, and monitor blood stock levels, ensuring timely availability and distribution of blood to hospitals and patients in need",
+    "feature": [
+      "Monitor blood stock levels across multiple locations, ensuring efficient inventory management",
+      "Streamline donor registration, appointment scheduling, and history tracking, enhancing donor engagement",
+      "A payment gateway in a blood management web application facilitates secure online transactions for donations and funding."
+    ]
   }
 ]
