@@ -1,4 +1,4 @@
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
@@ -14,9 +14,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_l5wy19f", "template_pofd6r2", form.current, {
-        publicKey: "BC9lad9nO4MWquhzj",
-      })
+      .sendForm("service_sdfizpm", "template_12xsrwf", form.current, "pVDExWkgwC5270NtH")
       .then(
         () => {
           console.log("SUCCESS!");
@@ -59,7 +57,7 @@ const Contact = () => {
               <input
                 // {...register("name", { required: true })}
                 type="text"
-                name="name"
+                name="user_name"
                 className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 border border-[#315779]"
               />
             </div>
@@ -68,7 +66,7 @@ const Contact = () => {
               <input
                 // {...register("email", { required: true })}
                 type="email"
-                name="email"
+                name="user_email"
                 className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 border border-[#315779]"
               />
             </div>
