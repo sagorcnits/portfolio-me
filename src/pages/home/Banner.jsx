@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import officialImg from "../../assets/images/sagor-official.png";
 import Social from "../../components/Social";
+import pdf from ".././../../public/portfolio of sagor (web developer).pdf";
 const Banner = () => {
   return (
     <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col-reverse lg:flex-row items-center ">
@@ -145,14 +146,11 @@ const Banner = () => {
               Contact Me <RiContactsFill></RiContactsFill>
             </button>
           </Link>
-          <Link
-            to="https://drive.google.com/file/d/16MMMG2F6FFy3jlGtjkSQzJNvteTo4bxL/view"
-            target="_blank"
-          >
+          <a href={pdf} download>
             <button className="button px-2 mt-6 font-semibold flex items-center gap-2">
               Download Resume <FaDownload></FaDownload>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="flex-1 flex justify-end">
