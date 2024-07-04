@@ -1,48 +1,32 @@
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
-import { useForm } from "react-hook-form";
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
-import Swal from "sweetalert2";
 import ContactCard from "../../components/ContactCard";
 import SectionIntro from "../../components/SectionIntro";
 import Social from "../../components/Social";
 import TinyBanner from "../../components/TinyBanner";
-
 const Contact = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
+  const form = useRef();
 
-  const submit = (data) => {
-    const name = data.name;
-    const email = data.email;
-    const message = data.message;
-    const userInfo = { name, email, message };
-    // console.log(userInfo);
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    fetch("https://portfolio-server-kappa-ivory.vercel.app/user", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
+    emailjs
+      .sendForm("service_l5wy19f", "template_pofd6r2", form.current, {
+        publicKey: "BC9lad9nO4MWquhzj",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
 
-      body: JSON.stringify(userInfo),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        Swal.fire({
-          icon: "success",
-          title: "Thanks for Contact",
-          text: "You will be emailed within a few moments",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-        reset();
-      });
+    // console.log(formData)
   };
 
   return (
@@ -61,7 +45,8 @@ const Contact = () => {
         ></SectionIntro>
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto mt-10">
           <form
-            onSubmit={handleSubmit(submit)}
+            ref={form}
+            onSubmit={sendEmail}
             className="text-white flex-1 border border-[#315779] p-4 rounded-md"
           >
             <p className="font-outfit">
@@ -72,7 +57,7 @@ const Contact = () => {
             <div className="mt-4">
               <label className="gr-sonali russo-one">Your Name:</label> <br />
               <input
-                {...register("name", { required: true })}
+                // {...register("name", { required: true })}
                 type="text"
                 name="name"
                 className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 border border-[#315779]"
@@ -81,7 +66,7 @@ const Contact = () => {
             <div className="mt-4">
               <label className="gr-sonali russo-one">Your Email:</label> <br />
               <input
-                {...register("email", { required: true })}
+                // {...register("email", { required: true })}
                 type="email"
                 name="email"
                 className="w-full rounded-md bg-transparent  py-2 focus:outline-none px-4 border border-[#315779]"
@@ -91,7 +76,7 @@ const Contact = () => {
               <label className="gr-sonali russo-one">Your Message:</label>{" "}
               <br />
               <textarea
-                {...register("message", { required: true })}
+                // {...register("message", { required: true })}
                 type="text"
                 name="message"
                 className="w-full h-[150px] overflow-auto resize-none rounded-md bg-transparent  py-2 focus:outline-none px-4 border border-[#315779]"
