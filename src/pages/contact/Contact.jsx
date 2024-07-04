@@ -1,8 +1,9 @@
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import Swal from "sweetalert2";
 import ContactCard from "../../components/ContactCard";
 import SectionIntro from "../../components/SectionIntro";
 import Social from "../../components/Social";
@@ -14,9 +15,21 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_sdfizpm", "template_12xsrwf", form.current, "pVDExWkgwC5270NtH")
+      .sendForm(
+        "service_sdfizpm",
+        "template_12xsrwf",
+        form.current,
+        "pVDExWkgwC5270NtH"
+      )
       .then(
         () => {
+          Swal.fire({
+            icon: "success",
+            title: "Succes Your Message Will be in touch shortly thank you",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          form.current.reset();
           console.log("SUCCESS!");
         },
         (error) => {
