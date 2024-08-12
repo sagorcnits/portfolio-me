@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import officialImg from "../../assets/images/sagor-official.png";
 import Social from "../../components/Social";
-import pdf from ".././../../public/portfolio of sagor (web developer).pdf";
+import pdf from ".././../../public/Resume of Sagor ( web developer) (1).pdf";
 const Banner = () => {
   return (
     <div className="max-w-6xl mx-auto mt-16 banner py-10 flex flex-col-reverse lg:flex-row items-center ">
