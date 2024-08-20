@@ -33,7 +33,7 @@
     "id": 3,
     "name": "BloodUnity",
     "image": "https://i.ibb.co/0CZYKDd/screencapture-blood-unity-bf5e3-web-app-dashboard-all-users-2024-07-04-11-27-50.png",
-    "project_url": "https://fristhomes-ca394.web.app/",
+    "project_url": "https://blood-unity-bf5e3.web.app/",
     "client": "https://github.com/sagorcnits/blood-unity",
     "server": "https://github.com/sagorcnits/blood-unity-server",
     "technology": "html, css, tailwind css, JavaScript, React js, Express js, MonogB",
