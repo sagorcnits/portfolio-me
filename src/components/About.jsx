@@ -1,4 +1,4 @@
-import bannerImg from "../assets/images/sagor-about.jpg";
+import bannerImg from "../assets/images/sagor-about-1.png";
 import SectionIntro from "./SectionIntro";
 const About = () => {
   return (
@@ -50,8 +50,15 @@ const About = () => {
           </div>
         </div>
         <div className="flex-1 flex justify-end">
-          <div className="md:w-[350px] md:h-[460px] overflow-hidden  rounded-md  border-[2px] border-sonali ">
-            <img className="w-full scale-[2]" src={bannerImg} alt="" />
+          <div
+            style={{
+              backgroundImage: `url(${bannerImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            className="md:w-[350px] md:h-[460px]  overflow-hidden  rounded-md  border-[2px] border-sonali"
+          >
+            {/* <img className="h-full w-full" src={bannerImg} alt="" /> */}
           </div>
         </div>
       </div>
