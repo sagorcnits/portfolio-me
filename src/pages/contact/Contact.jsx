@@ -110,7 +110,7 @@ const Contact = () => {
                 info={{
                   icon: <FaPhoneFlip></FaPhoneFlip>,
                   title: "Please Call",
-                  address: "018520******",
+                  address: "01852024152",
                 }}
               ></ContactCard>
             </div>
